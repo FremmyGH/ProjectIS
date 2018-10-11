@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.80" multi-file="no" uid="simpb855f69dd89b4c5292dc15ee5f53d925">
+  <meta>
+    <name>Project</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="lifeline" type="UmlLifeline" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="UmlSequenceAction" />
+        <value>14</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="UmlActivationBar" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-use" type="UmlInteractionUse" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="fragment" type="UmlFragment" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-operand" type="UmlInteractionOperand" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="lifeline" type="UmlLifeline" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="UmlSequenceAction" />
+        <value>15</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="UmlActivationBar" />
+        <value>27</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-use" type="UmlInteractionUse" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="fragment" type="UmlFragment" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="UmlComment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="UmlCommentConnector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="interaction-operand" type="UmlInteractionOperand" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>11</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlSequenceDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-8467491f441c43a8a0d48274ae902ab3" name="" task-id-sequence="0">
+    <working-schedule uid="ws-6d5c663148004d3fa89cdac147677e56" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="P4a4668e0d9f54d499558e12528023f1a">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-0368e8a0cf954fefada439c1d9993612" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-ed72851395cb4cdf8702a0faa50607af" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items>
+    <item id="35333fa9f717406388c9ab398f548bb7" cid="IOP002" type="interaction-operand" name="InteractionOperand2" style-class="" visibility="package" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:09:01">
+      <style class="default" />
+      <interaction-operand guard="Команда остановиться" />
+    </item>
+    <item id="6580ef08e74249c5a696cb4fa581fd6d" cid="IOP001" type="interaction-operand" name="InteractionOperand1" style-class="" owner="7bd4bd2f8310432aadf7f1bf3be7908c" visibility="package" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:06:20">
+      <style class="default" />
+      <interaction-operand guard="Счет&lt;21" />
+    </item>
+  </items>
+  <models>
+    <model id="p1ff79dccebc6413891c98675e60e0b46_240477513" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>10/09/2018 19:50:14</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-sequence" id="p420740828a8949af91802ab5ac9539f9_483432822" name="SequenceDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,490">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>10/09/2018 19:50:14</creation-date>
+          <change-date>10/09/2018 20:13:45</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="b3f826e5263040e2aa59a66f556050aa" cid="LL001" type="lifeline" name="Игроки" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 19:50:25">
+            <style class="default" />
+            <lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="46772ab735694a5db635f2c6b8926df9" cid="LL002" type="lifeline" name="Банкомет" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 19:51:24">
+            <style class="default" />
+            <lifeline classifier-name="" is-active="false" is-multi-object="false" />
+          </item>
+          <item id="7bd4bd2f8310432aadf7f1bf3be7908c" cid="FR003" type="fragment" name="счет больше 21" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:04:14">
+            <style class="default" />
+            <fragment operator="opt">
+              <operands>
+                <operand uid="6580ef08e74249c5a696cb4fa581fd6d" />
+              </operands>
+            </fragment>
+          </item>
+          <item id="b49577a7bf5e49f18377cbb8f1859e48" cid="FR002" type="fragment" name="счет меньше 21" style-class="" visibility="public" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:01:50">
+            <style class="default" />
+            <fragment operator="loop">
+              <operands>
+                <operand uid="35333fa9f717406388c9ab398f548bb7" />
+              </operands>
+            </fragment>
+          </item>
+          <item id="d60e71af94d0496abf048ac00f500275" cid="SM009" type="sequence-action" name="Message9" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:07:36">
+            <style class="default" />
+            <sequence-action type="call" message="Сделать ставку" is-asynchronous="false" from="430e66c41fa64dfdbf37ca59b2e3be85" to="3430a8a5d8f648dea6c2fe230b20f278" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="430e66c41fa64dfdbf37ca59b2e3be85" cid="AB015" type="activation-bar" name="ExecutionOccurrence15" style-class="" owner="b3f826e5263040e2aa59a66f556050aa" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:07:36">
+            <style class="default" />
+            <activation-bar lifeline-ref="b3f826e5263040e2aa59a66f556050aa" />
+          </item>
+          <item id="3430a8a5d8f648dea6c2fe230b20f278" cid="AB016" type="activation-bar" name="ExecutionOccurrence16" style-class="" owner="46772ab735694a5db635f2c6b8926df9" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:07:36">
+            <style class="default" />
+            <activation-bar lifeline-ref="46772ab735694a5db635f2c6b8926df9" />
+          </item>
+          <item id="41d079eaa6ce4b71a78fad23e55bed1b" cid="AB019" type="activation-bar" name="ExecutionOccurrence19" style-class="" owner="b3f826e5263040e2aa59a66f556050aa" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:11:35">
+            <style class="default" />
+            <activation-bar lifeline-ref="b3f826e5263040e2aa59a66f556050aa" />
+          </item>
+          <item id="798e6ce5764d4435853e79e282e8ab65" cid="SM011" type="sequence-action" name="Message11" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:11:35">
+            <style class="default" />
+            <sequence-action type="call" message="Бросить кость" is-asynchronous="false" from="41d079eaa6ce4b71a78fad23e55bed1b" to="40b628da19d54809801ba76a3d44cbc8" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="40b628da19d54809801ba76a3d44cbc8" cid="AB020" type="activation-bar" name="ExecutionOccurrence20" style-class="" owner="b3f826e5263040e2aa59a66f556050aa" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:11:35">
+            <style class="default" />
+            <activation-bar lifeline-ref="b3f826e5263040e2aa59a66f556050aa" />
+          </item>
+          <item id="632e7765cdcb4bd19ad5d08ecaab620b" cid="SM012" type="sequence-action" name="Message12" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:12:22">
+            <style class="default" />
+            <sequence-action type="call" message="Обнулить счёт" is-asynchronous="false" from="2e3e8fa4a40841548991c067d20e15f0" to="16db19971cbb45b18975483654157119" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="2e3e8fa4a40841548991c067d20e15f0" cid="AB021" type="activation-bar" name="ExecutionOccurrence21" style-class="" owner="b3f826e5263040e2aa59a66f556050aa" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:12:22">
+            <style class="default" />
+            <activation-bar lifeline-ref="b3f826e5263040e2aa59a66f556050aa" />
+          </item>
+          <item id="16db19971cbb45b18975483654157119" cid="AB022" type="activation-bar" name="ExecutionOccurrence22" style-class="" owner="46772ab735694a5db635f2c6b8926df9" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:12:22">
+            <style class="default" />
+            <activation-bar lifeline-ref="46772ab735694a5db635f2c6b8926df9" />
+          </item>
+          <item id="bb5acfe8374a4d39aadcf5c257c984a1" cid="SM013" type="sequence-action" name="Message13" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:08">
+            <style class="default" />
+            <sequence-action type="call" message="Передать ход" is-asynchronous="false" from="2c3d5333d69b43f1b3d6c4a60d40ec3e" to="28cac4ffe4ae4f7098c4aeb774c10393" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="2c3d5333d69b43f1b3d6c4a60d40ec3e" cid="AB023" type="activation-bar" name="ExecutionOccurrence23" style-class="" owner="b3f826e5263040e2aa59a66f556050aa" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:08">
+            <style class="default" />
+            <activation-bar lifeline-ref="b3f826e5263040e2aa59a66f556050aa" />
+          </item>
+          <item id="28cac4ffe4ae4f7098c4aeb774c10393" cid="AB024" type="activation-bar" name="ExecutionOccurrence24" style-class="" owner="46772ab735694a5db635f2c6b8926df9" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:08">
+            <style class="default" />
+            <activation-bar lifeline-ref="46772ab735694a5db635f2c6b8926df9" />
+          </item>
+          <item id="aba51b956e784960ba65cdb5e8d1a5e5" cid="SM014" type="sequence-action" name="Message14" style-class="" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:45">
+            <style class="default" />
+            <sequence-action type="call" message="Записать результат" is-asynchronous="false" from="e9f07c6b159c4808aa1fe4abd27ee5c2" to="40ddc8bb03e54a3ba384f927928ad3d1" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="e9f07c6b159c4808aa1fe4abd27ee5c2" cid="AB025" type="activation-bar" name="ExecutionOccurrence25" style-class="" owner="46772ab735694a5db635f2c6b8926df9" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:45">
+            <style class="default" />
+            <activation-bar lifeline-ref="46772ab735694a5db635f2c6b8926df9" />
+          </item>
+          <item id="40ddc8bb03e54a3ba384f927928ad3d1" cid="AB026" type="activation-bar" name="ExecutionOccurrence26" style-class="" owner="46772ab735694a5db635f2c6b8926df9" visibility="package" change-tracking-state="added" creator="P4a4668e0d9f54d499558e12528023f1a" creation-date="10/09/2018 20:13:45">
+            <style class="default" />
+            <activation-bar lifeline-ref="46772ab735694a5db635f2c6b8926df9" />
+          </item>
+        </abstract-items>
+        <layer id="6dbb6b02095143979546c829fbfc7a1b" name="Default" visible="true" enabled="true" locked="false">
+          <item id="b3f826e5263040e2aa59a66f556050aa" iid="c829d2bd08e746e68841fa333f63df54" anchor="None" creation-date="10/09/2018 19:50:25" order-index="0" type="lifeline">
+            <layout ax="194.5" ay="50" awidth="140" aheight="913" x="194.5" y="50" width="140" height="913" container-layout="simple" />
+          </item>
+          <item id="46772ab735694a5db635f2c6b8926df9" iid="996e31af1004418e87054bfb90e776d2" anchor="None" creation-date="10/09/2018 19:51:24" order-index="1" type="lifeline">
+            <layout ax="403" ay="50" awidth="140" aheight="913" x="403" y="50" width="140" height="913" container-layout="simple" />
+          </item>
+          <item id="b49577a7bf5e49f18377cbb8f1859e48" iid="f29984993f284a67aff5ca29f169d7c8" anchor="None" creation-date="10/09/2018 20:01:50" order-index="5" type="entity">
+            <layout ax="166" ay="287" awidth="377" aheight="390" x="166" y="287" width="377" height="390" />
+          </item>
+          <item id="7bd4bd2f8310432aadf7f1bf3be7908c" iid="2daca4e4cabc4bbb8d2ce6c27ed14eaf" anchor="None" creation-date="10/09/2018 20:04:14" order-index="6" type="entity">
+            <layout ax="194.5" ay="482" awidth="321" aheight="162" x="194.5" y="482" width="321" height="162" />
+          </item>
+          <item id="6580ef08e74249c5a696cb4fa581fd6d" iid="41e7bd41bf8641fa8673ab05890e9e38" container="7bd4bd2f8310432aadf7f1bf3be7908c" container-iid="2daca4e4cabc4bbb8d2ce6c27ed14eaf" creation-date="10/09/2018 20:06:20" order-index="7" type="entity">
+            <layout ax="194.5" ay="505.8711" awidth="321" aheight="138.1289" x="194.5" y="505.8711" width="321" height="138.1289" />
+          </item>
+          <item id="d60e71af94d0496abf048ac00f500275" iid="136f66c5b2d54db587e4a46a04d81ac6" creation-date="10/09/2018 20:07:36" order-index="8" type="sequence-action">
+            <layout x1="274" y1="155" x2="463" y2="155" ax="274" ay="140" awidth="189" aheight="20" x="274" y="140" width="189" height="20" message-x="0" message-y="-10" message-width="126" />
+            <sequence-action from="430e66c41fa64dfdbf37ca59b2e3be85" to="3430a8a5d8f648dea6c2fe230b20f278" show-sequence-number="false" />
+          </item>
+          <item id="430e66c41fa64dfdbf37ca59b2e3be85" iid="65b990114f4f4563b4103792885bb348" container="b3f826e5263040e2aa59a66f556050aa" container-iid="c829d2bd08e746e68841fa333f63df54" creation-date="10/09/2018 20:07:36" order-index="9" type="entity">
+            <layout ax="254.5" ay="155" awidth="20" aheight="40" x="254.5" y="155" width="20" height="40" />
+          </item>
+          <item id="3430a8a5d8f648dea6c2fe230b20f278" iid="9c62271c52e941719807f084c3c47acb" container="46772ab735694a5db635f2c6b8926df9" container-iid="996e31af1004418e87054bfb90e776d2" creation-date="10/09/2018 20:07:36" order-index="10" type="entity">
+            <layout ax="463" ay="155" awidth="20" aheight="40" x="463" y="155" width="20" height="40" />
+          </item>
+          <item id="35333fa9f717406388c9ab398f548bb7" iid="774e90cba4494a7581e8fa1dafa17fc5" container="b49577a7bf5e49f18377cbb8f1859e48" container-iid="f29984993f284a67aff5ca29f169d7c8" creation-date="10/09/2018 20:09:01" order-index="11" type="entity">
+            <layout ax="166" ay="310.8711" awidth="377" aheight="366.1289" x="166" y="310.8711" width="377" height="366.1289" />
+          </item>
+          <item id="798e6ce5764d4435853e79e282e8ab65" iid="42fd02113b85453abf509006c27d9080" creation-date="10/09/2018 20:11:35" order-index="12" type="sequence-action">
+            <layout x1="274" y1="379" x2="284" y2="419" ax="274" ay="379" awidth="100" aheight="40" x="274" y="379" width="100" height="40" message-x="5" message-y="-30" message-width="154" />
+            <sequence-action from="41d079eaa6ce4b71a78fad23e55bed1b" to="40b628da19d54809801ba76a3d44cbc8" show-sequence-number="false" />
+          </item>
+          <item id="41d079eaa6ce4b71a78fad23e55bed1b" iid="65b5071d1b8346eca1dafc9328601303" container="b3f826e5263040e2aa59a66f556050aa" container-iid="c829d2bd08e746e68841fa333f63df54" creation-date="10/09/2018 20:11:35" order-index="13" type="entity">
+            <layout ax="254.5" ay="379" awidth="20" aheight="95" x="254.5" y="379" width="20" height="95" />
+          </item>
+          <item id="40b628da19d54809801ba76a3d44cbc8" iid="e2a654fe24c8446194aafd67698ebda6" container="b3f826e5263040e2aa59a66f556050aa" container-iid="c829d2bd08e746e68841fa333f63df54" creation-date="10/09/2018 20:11:35" order-index="14" type="entity">
+            <layout ax="264.5" ay="394" awidth="20" aheight="70" x="254.5" y="394" width="20" height="70" />
+          </item>
+          <item id="632e7765cdcb4bd19ad5d08ecaab620b" iid="9f42330cebd24447944002e78f11dbc8" creation-date="10/09/2018 20:12:22" order-index="15" type="sequence-action">
+            <layout x1="274" y1="553" x2="463" y2="553" ax="274" ay="538" awidth="189" aheight="20" x="274" y="538" width="189" height="20" message-x="0" message-y="-10" message-width="122" />
+            <sequence-action from="2e3e8fa4a40841548991c067d20e15f0" to="16db19971cbb45b18975483654157119" show-sequence-number="false" />
+          </item>
+          <item id="2e3e8fa4a40841548991c067d20e15f0" iid="921056a89eff43a9b1194a203147e3d6" container="b3f826e5263040e2aa59a66f556050aa" container-iid="c829d2bd08e746e68841fa333f63df54" creation-date="10/09/2018 20:12:22" order-index="16" type="entity">
+            <layout ax="254.5" ay="553" awidth="20" aheight="40" x="254.5" y="553" width="20" height="40" />
+          </item>
+          <item id="16db19971cbb45b18975483654157119" iid="8c57df98c8fc41089bfc5087a1934738" container="46772ab735694a5db635f2c6b8926df9" container-iid="996e31af1004418e87054bfb90e776d2" creation-date="10/09/2018 20:12:22" order-index="17" type="entity">
+            <layout ax="463" ay="553" awidth="20" aheight="40" x="463" y="553" width="20" height="40" />
+          </item>
+          <item id="bb5acfe8374a4d39aadcf5c257c984a1" iid="a1f49b254ef94c399d4d05ca90787baf" creation-date="10/09/2018 20:13:08" order-index="18" type="sequence-action">
+            <layout x1="274" y1="717" x2="463" y2="717" ax="274" ay="702" awidth="189" aheight="20" x="274" y="702" width="189" height="20" message-x="0" message-y="-10" message-width="124" />
+            <sequence-action from="2c3d5333d69b43f1b3d6c4a60d40ec3e" to="28cac4ffe4ae4f7098c4aeb774c10393" show-sequence-number="false" />
+          </item>
+          <item id="2c3d5333d69b43f1b3d6c4a60d40ec3e" iid="820b7db12743411b890d9b0b3bc5634c" container="b3f826e5263040e2aa59a66f556050aa" container-iid="c829d2bd08e746e68841fa333f63df54" creation-date="10/09/2018 20:13:08" order-index="19" type="entity">
+            <layout ax="254.5" ay="717" awidth="20" aheight="40" x="254.5" y="717" width="20" height="40" />
+          </item>
+          <item id="28cac4ffe4ae4f7098c4aeb774c10393" iid="f3253e4a48284dc590582a48b5bb4856" container="46772ab735694a5db635f2c6b8926df9" container-iid="996e31af1004418e87054bfb90e776d2" creation-date="10/09/2018 20:13:08" order-index="20" type="entity">
+            <layout ax="463" ay="717" awidth="20" aheight="40" x="463" y="717" width="20" height="40" />
+          </item>
+          <item id="aba51b956e784960ba65cdb5e8d1a5e5" iid="806f51388c624e1086627aa144dca6a0" creation-date="10/09/2018 20:13:45" order-index="21" type="sequence-action">
+            <layout x1="483" y1="826" x2="493" y2="866" ax="483" ay="826" awidth="100" aheight="40" x="483" y="826" width="100" height="40" message-x="13" message-y="-36" />
+            <sequence-action from="e9f07c6b159c4808aa1fe4abd27ee5c2" to="40ddc8bb03e54a3ba384f927928ad3d1" show-sequence-number="false" />
+          </item>
+          <item id="e9f07c6b159c4808aa1fe4abd27ee5c2" iid="2a4864bad6fe49d3bde4299effd6882c" container="46772ab735694a5db635f2c6b8926df9" container-iid="996e31af1004418e87054bfb90e776d2" creation-date="10/09/2018 20:13:45" order-index="22" type="entity">
+            <layout ax="463" ay="826" awidth="20" aheight="95" x="463" y="826" width="20" height="95" />
+          </item>
+          <item id="40ddc8bb03e54a3ba384f927928ad3d1" iid="1ce5bb8b67484cc2acecb864c80a9ea9" container="46772ab735694a5db635f2c6b8926df9" container-iid="996e31af1004418e87054bfb90e776d2" creation-date="10/09/2018 20:13:45" order-index="23" type="entity">
+            <layout ax="473" ay="841" awidth="20" aheight="70" x="463" y="841" width="20" height="70" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
