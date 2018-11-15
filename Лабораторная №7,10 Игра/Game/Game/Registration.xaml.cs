@@ -25,8 +25,8 @@ namespace Game
         }
 
         Players players = new Players();
-        public static int Id { get; set; } = 1;
-        private bool close = true;
+        public static int Id { get; set; } = 0;
+        private bool _close = true;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (Name.Text!=""&&Sum.Text!="")
@@ -37,12 +37,19 @@ namespace Game
                 {
                     for (var i = 0; i < players.Length(); i++)
                     {
-                        if (players[i].Name != name) continue;
-                        MessageBox.Show("Name exists!");
-                        repeat = false;
+                        if (players[i].Name == name)
+                        {
+                            MessageBox.Show("Name exists!");
+                            repeat = false;
+                        }
+                        else if (sum == 0)
+                        {
+                            MessageBox.Show("Capital can be 0!");
+                        }
+                       
                     }
                     if (!repeat) return;
-                    players.AddPlayer(Id, name, sum, 0, false);
+                    players.AddPlayer(Id, name, sum, false);
                     Id++;
                     Description.Text = $"New player {name}! Welcome!";
                 }
@@ -71,7 +78,7 @@ namespace Game
             {
                 var battleForm = new BattleForm {Players = players};
                 battleForm.Show();
-                close = false;
+                _close = false;
                 Close();
             }
             else
@@ -81,7 +88,7 @@ namespace Game
         }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (!close) return;
+            if (!_close) return;
             var main = new MainWindow();
             main.Show();
 

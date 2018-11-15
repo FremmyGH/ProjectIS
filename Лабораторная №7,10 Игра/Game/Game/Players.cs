@@ -9,13 +9,13 @@ namespace Game
     public class Players
     {
         private List<Player> _players = new List<Player>();
-        private double _bank;
+        //private double _bank;
 
-        public double Bank { get => _bank; set => _bank = value; }
+        //public double Bank { get => _bank; set => _bank = value; }
 
-        public void AddPlayer(int id, string name,double sumMoney, int sumValue , bool isComp)
+        public void AddPlayer(int id, string name,double sumMoney, bool isComp)
         {
-            _players.Add(new Player(id, name, sumMoney,sumValue, isComp));
+            _players.Add(new Player(id, name, sumMoney, isComp));
         }
         public Player this[int i]
         {
@@ -30,6 +30,20 @@ namespace Game
         public void DeletePlayer(int i)
         {
             _players.RemoveAt(i);
+        }
+
+       
+
+        //public void Clear()
+        //{
+        //    _players.Clear();
+        //}
+        public int ThrowDice()
+        {
+            var rnd = new Random();
+            var result = rnd.Next(1, 6);
+            return result;
+            //return Value;
         }
     }
 }

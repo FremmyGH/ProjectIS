@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="BattleForm" Height="300" Width="506.15" Activated="BattleForm1_Activated">
+        Title="BattleForm" Height="478.625" Width="506.15" Loaded="BattleForm1_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="Throw" Content="Throw Dice" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="99" Click="Throw_Click" Height="26"/>
         <TextBlock x:Name="Status" HorizontalAlignment="Left" Margin="145,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Status: " Width="332" TextAlignment="Center"/>
         <Button x:Name="Pass" Content="Pass" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="Pass_Click"/>
-        <TextBox x:Name="ListPlayers" HorizontalAlignment="Left" Height="225" Margin="141,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" VerticalScrollBarVisibility="Auto" BorderBrush="#FF6787E8" CaretBrush="#FFB49090" OpacityMask="Black" Background="#FFECF8FF"/>
+        <TextBox x:Name="ListPlayers" HorizontalAlignment="Left" Height="404" Margin="141,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" VerticalScrollBarVisibility="Auto" BorderBrush="#FF6787E8" CaretBrush="#FFB49090" OpacityMask="Black" Background="#FFECF8FF" TextAlignment="Center"/>
         <Button x:Name="Next" Content="Next Round" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="Next_Click"/>
         <Button x:Name="End" Content="End Game" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="End_Click"/>
 

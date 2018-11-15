@@ -34,13 +34,18 @@ namespace Game
             using (var con = new SqlConnection(connection))
             {
                 var query = "SELECT Name,Score FROM Player";
-                //con.Open();
-                //var cmd = new SqlCommand(query,con);
                 var adapter = new SqlDataAdapter(query,con);
                 adapter.Fill(ds, "Player");
                 ScoreGridView.ItemsSource = ds.Tables[0].DefaultView;
 
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var back = new MainWindow();
+            back.Show();
+            Close();
         }
     }
 }

@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="ScoreTable" Height="300" Width="406.334" Activated="Window_Activated">
+        Title="ScoreTable" Height="300" Width="406.334" Activated="Window_Activated" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,11,0">
         <DataGrid x:Name="ScoreGridView" Height="162" Margin="10,10,10,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="56,205,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="182,205,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="281,189,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="Button_Click"/>
 
     </Grid>
 </Window>
