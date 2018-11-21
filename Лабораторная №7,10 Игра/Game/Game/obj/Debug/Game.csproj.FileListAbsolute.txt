@@ -61,3 +61,24 @@ D:\Учеба\Проектирование ИС 3 курс\Лабораторн�
 D:\Учеба\Проектирование ИС 3 курс\Лабораторная №7,10-копия\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
 D:\Учеба\Проектирование ИС 3 курс\Лабораторная №7,10-копия\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.exe
 D:\Учеба\Проектирование ИС 3 курс\Лабораторная №7,10-копия\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.pdb
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\bin\Debug\Game.exe.config
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\bin\Debug\Game.exe
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\bin\Debug\Game.pdb
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\BattleForm.g.cs
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\MainWindow.g.cs
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Registration.g.cs
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\ScoreTable.g.cs
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\App.g.cs
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game_MarkupCompile.cache
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game_MarkupCompile.lref
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\BattleForm.baml
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\MainWindow.baml
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Registration.baml
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\ScoreTable.baml
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.g.resources
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.Properties.Resources.resources
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.csproj.GenerateResource.Cache
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.exe
+D:\GitClones\ProjectIS\Лабораторная №7,10 Игра\Game\Game\obj\Debug\Game.pdb
