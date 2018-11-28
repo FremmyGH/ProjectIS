@@ -30,14 +30,15 @@ namespace Game
         private void Window_Activated(object sender, EventArgs e)
         {
             const string connection = @"Data Source=DESKTOP-FPQ69BF\SQLSERVER;Initial Catalog=GameDice;Integrated Security=True";
+            const string sqlExpression = "sp_showQuery";
             var ds = new DataSet();
             using (var con = new SqlConnection(connection))
             {
-                var query = "SELECT Name,Score FROM Player";
-                var adapter = new SqlDataAdapter(query,con);
+                //var query = "SELECT Name,Score FROM Player";
+                var adapter = new SqlDataAdapter(sqlExpression, con);
                 adapter.Fill(ds, "Player");
                 ScoreGridView.ItemsSource = ds.Tables[0].DefaultView;
-
+                ScoreGridView.ColumnWidth = 400;
             }
         }
 
@@ -47,5 +48,7 @@ namespace Game
             back.Show();
             Close();
         }
+
+       
     }
 }

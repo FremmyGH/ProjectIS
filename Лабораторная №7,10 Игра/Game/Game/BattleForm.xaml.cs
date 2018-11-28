@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace Game
 {
@@ -60,16 +61,62 @@ namespace Game
             ListPlayers.Text += "<<<<<<<Начало игры>>>>>>>\n";
             ListPlayers.Text += $"Player's turn {ListRound[_roundNumber].Players[_playerNumber].Name}\n";
             Status.Text = $"Status: Player's turn {ListRound[_roundNumber].Players[_playerNumber].Name}, money: {ListRound[_roundNumber].Players[_playerNumber].SumMoney-1}";
+            Throw.IsEnabled = false;
             Next.IsEnabled = false;
             End.IsEnabled = false;
-            ListRound[_roundNumber].Bank = ListRound[_roundNumber].Players.Length();
+            Pass.IsEnabled = false;
             //MessageBox.Show(ListRound[roundNumber].Bank.ToString());
             //Players.Bank = Players.Length();
+            //for (var i = 0; i < Players.Length(); i++)
+            //{
+            //    Players[i].SumMoney--;
+            //}
+
+            //for (var i = 0; i < ListRound[_roundNumber].Players[_playerNumber].SumMoney; i++)
+            //{
+            //    Bets.Items.Add(i + 1);
+            //}
+            //PlayersStatus.Text += "<<<<<<<Информация по игрокам>>>>>>>\n";
             for (var i = 0; i < Players.Length(); i++)
             {
-                Players[i].SumMoney--;
+                PlayersStatus.Text += $"Игрок: {ListRound[_roundNumber].Players[i].Name}, Очки: {ListRound[ListRound.Length()-1].Score[i]}, Фишки: {ListRound[_roundNumber].Players[i].SumMoney}\n";
+                PlayersStatus.Text += "\n";
             }
+           
+
         }
+        private void DoBet_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(Bets.Text, out var sum))
+            {
+                if (sum<=ListRound[_roundNumber].Players[_playerNumber].SumMoney)
+                {
+                    var r = Bets.Text;
+                    ListRound[_roundNumber].Bank += Convert.ToInt32(r);
+                    ListRound[_roundNumber].Players[_playerNumber].SumMoney -= sum;
+                    //MessageBox.Show(ListRound[_roundNumber].Players[_playerNumber].SumMoney.ToString(CultureInfo.InvariantCulture));
+
+                    //MessageBox.Show(ListRound[_roundNumber].Bank.ToString());
+                    DoBet.IsEnabled = false;
+                    Throw.IsEnabled = true;
+                    Pass.IsEnabled = true;
+                    Bets.IsEnabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Сумма ставки больше вашего капитала!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите число!");
+            }
+
+
+            //Next.IsEnabled = false;
+            //End.IsEnabled = false;
+        }
+
         private void Throw_Click(object sender, RoutedEventArgs e)
         {
             var throwResult=Players.ThrowDice();
@@ -106,10 +153,17 @@ namespace Game
                 }
             }
 
+            PlayersStatus.Text = "";
+            for (var i = 0; i < Players.Length(); i++)
+            {
+                PlayersStatus.Text += $"Игрок: {ListRound[_roundNumber].Players[i].Name}, Очки: {ListRound[_roundNumber].Score[i]}, Фишки: {ListRound[_roundNumber].Players[i].SumMoney}\n";
+                PlayersStatus.Text += "\n";
+            }
         }
 
         private void Pass_Click(object sender, RoutedEventArgs e)
         {
+            //DoBet.IsEnabled = true;
             if (_bestScore < ListRound[_roundNumber].Score[_playerNumber])
             {
                 _bestScore = ListRound[_roundNumber].Score[_playerNumber];
@@ -128,7 +182,9 @@ namespace Game
                 _playerNumber++;
                 ListPlayers.Text += $"Player's turn {ListRound[_roundNumber].Players[_playerNumber].Name}\n";
                 Status.Text = $"Status: Player's turn {ListRound[_roundNumber].Players[_playerNumber].Name}, money: {ListRound[_roundNumber].Players[_playerNumber].SumMoney}";
-                Throw.IsEnabled = true;
+                DoBet.IsEnabled = true;
+                Throw.IsEnabled = false;
+                Bets.IsEnabled = true;
             }
             else
             {
@@ -182,6 +238,8 @@ namespace Game
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             End.IsEnabled = false;
+            Bets.IsEnabled = true;
+            DoBet.IsEnabled = true;
             if (_dopRound)
             {
                 _roundNumber++;
@@ -191,9 +249,9 @@ namespace Game
                 _bestPlayerId = -1;
                 _score = new int[finalists.Length()];
                 ListRound.AddRound(_bank, _score, finalists);
-               
-                Throw.IsEnabled = true;
-                Pass.IsEnabled = true;
+                DoBet.IsEnabled = true;
+                Throw.IsEnabled = false;
+                Pass.IsEnabled = false;
                 Next.IsEnabled = false;
                 ListPlayers.Text = "";
                 ListPlayers.Text += "<<<<<<<Правила>>>>>>>\n";
@@ -218,18 +276,18 @@ namespace Game
                         Players.DeletePlayer(i);
                     }
                 }
-                for (var i = 0; i < Players.Length(); i++)
-                {
-                    Players[i].SumMoney--;
-                }
+                //for (var i = 0; i < Players.Length(); i++)
+                //{
+                //    Players[i].SumMoney--;
+                //}
                 _score =new int[Players.Length()];
-                _bank = Players.Length();
+                _bank = 0;
                 ListRound.AddRound(_bank,_score,Players);
 
                 if (Players.Length() > 1)
                 {
-                    Throw.IsEnabled = true;
-                    Pass.IsEnabled = true;
+                    Throw.IsEnabled = false;
+                    Pass.IsEnabled = false;
                     Next.IsEnabled = false;
                     ListPlayers.Text = "";
                     ListPlayers.Text += "<<<<<<<Rules>>>>>>>\n";
@@ -247,7 +305,13 @@ namespace Game
                     Close();
                 }
             }
-            
+
+            PlayersStatus.Text = "";
+            for (var i = 0; i < Players.Length(); i++)
+            {
+                PlayersStatus.Text += $"Игрок: {ListRound[_roundNumber].Players[i].Name}, Очки: {ListRound[_roundNumber].Score[i]}, Фишки: {ListRound[_roundNumber].Players[i].SumMoney}\n";
+                PlayersStatus.Text += "\n";
+            }
         }
 
         private void End_Click(object sender, RoutedEventArgs e)
@@ -275,12 +339,13 @@ namespace Game
             //        con.Close();
             //    }
             //}
+            //var record = new Record(Players);
             ListRound.AddInDB(Players);
             var score = new ScoreTable();
             score.Show();
             Close();
         }
 
-       
+        
     }
 }

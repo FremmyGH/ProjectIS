@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="BattleForm" Height="478.625" Width="506.15" Loaded="BattleForm1_Loaded" WindowStartupLocation="CenterScreen">
+        Title="BattleForm" Height="478.625" Width="846.15" Loaded="BattleForm1_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="Throw" Content="Throw Dice" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="99" Click="Throw_Click" Height="26"/>
-        <TextBlock x:Name="Status" HorizontalAlignment="Left" Margin="145,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Status: " Width="332" TextAlignment="Center"/>
-        <Button x:Name="Pass" Content="Pass" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="Pass_Click"/>
-        <TextBox x:Name="ListPlayers" HorizontalAlignment="Left" Height="404" Margin="141,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" VerticalScrollBarVisibility="Auto" BorderBrush="#FF6787E8" CaretBrush="#FFB49090" OpacityMask="Black" Background="#FFECF8FF" TextAlignment="Center"/>
-        <Button x:Name="Next" Content="Next Round" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="Next_Click"/>
-        <Button x:Name="End" Content="End Game" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="End_Click"/>
+        <Button x:Name="Throw" Content="Кинуть кость" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="111" Click="Throw_Click" Height="26"/>
+        <TextBlock x:Name="Status" HorizontalAlignment="Left" Margin="229,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Статус игры" Width="291" TextAlignment="Center"/>
+        <Button x:Name="Pass" Content="Пас" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="112" Height="26" Click="Pass_Click"/>
+        <TextBox x:Name="ListPlayers" HorizontalAlignment="Left" Height="404" Margin="229,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" VerticalScrollBarVisibility="Auto" BorderBrush="#FF6787E8" CaretBrush="#FFB49090" OpacityMask="Black" Background="#FFECF8FF" TextAlignment="Center"/>
+        <Button x:Name="Next" Content="Следующий раунд" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="112" Height="26" Click="Next_Click"/>
+        <Button x:Name="End" Content="End Game" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="111" Height="26" Click="End_Click"/>
+        <TextBox x:Name="PlayersStatus" HorizontalAlignment="Left" Height="281" Margin="524,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304" VerticalScrollBarVisibility="Auto" BorderBrush="#FF6787E8" CaretBrush="#FFB49090" OpacityMask="Black" Background="#FFDFF9D3" IsReadOnly="True" TextOptions.TextFormattingMode="Display" TextAlignment="Justify"/>
+        <TextBlock x:Name="Status_Copy" HorizontalAlignment="Left" Margin="525,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Статус игроков" Width="303" TextAlignment="Center"/>
+        <Button x:Name="DoBet" Content="Сделать ставку" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="111" Height="24" Click="DoBet_Click"/>
+        <TextBlock x:Name="Status_Copy1" HorizontalAlignment="Left" Margin="114,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Ставка" Width="110" TextAlignment="Center"/>
+        <TextBox x:Name="Bets" HorizontalAlignment="Left" Height="24" Margin="126,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Window>
