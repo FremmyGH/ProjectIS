@@ -340,10 +340,19 @@ namespace Game
             //    }
             //}
             //var record = new Record(Players);
-            ListRound.AddInDB(Players);
-            var score = new ScoreTable();
-            score.Show();
-            Close();
+            try
+            {
+                ListRound.AddInDB(Players);
+                var score = new ScoreTable();
+                score.Show();
+                Close();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
+            
         }
 
         
